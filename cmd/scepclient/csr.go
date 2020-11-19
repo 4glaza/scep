@@ -20,7 +20,7 @@ const (
 type csrOptions struct {
 	cn, org, country, ou, locality, province, challenge string
 	key                                                 *rsa.PrivateKey
-sigAlgo                                             x509.SignatureAlgorithm
+
 }
 
 func loadOrMakeCSR(path string, opts *csrOptions) (*x509.CertificateRequest, error) {
